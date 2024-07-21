@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity-3</title>
+  </head>
+  <body>
+    <h1>this is heading</h1>
+    <p id="p">remove this element</p>
+    <p>this is paragraph</p>
+
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <button id="removeLastButton">Remove Last Item</button>
+
+    <script>
+      const p = document.getElementById("p");
+      p.remove();
+
+      const button = document.getElementById("removeLastButton");
+      const itemList = document.getElementById("itemList");
+
+      button.addEventListener("click", function () {
+        const lastItem = itemList.lastChild;
+        if (lastItem) {
+          itemList.removeChild(lastItem);
+        }
+      });
+    </script>
+  </body>
+</html>

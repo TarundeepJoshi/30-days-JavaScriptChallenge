@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity-5</title>
+  </head>
+  <body>
+    <p id="message">Click the button to change this message.</p>
+    <button id="myButton">Click Me</button>
+
+    <h1 id="heading">This is a heading</h1>
+
+    <script>
+      const button = document.getElementById("myButton");
+      const message = document.getElementById("message");
+
+      button.addEventListener("click", function () {
+        message.textContent = "The button has been clicked!";
+      });
+
+      const heading = document.getElementById("heading");
+
+      heading.addEventListener("mouseover", function () {
+        heading.style.color = "red";
+      });
+
+      heading.addEventListener("mouseout", function () {
+        heading.style.color = "green";
+      });
+    </script>
+  </body>
+</html>

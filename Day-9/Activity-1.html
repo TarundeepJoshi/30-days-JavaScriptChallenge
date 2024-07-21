@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity-1</title>
+  </head>
+  <body>
+    <h1 id="heading">This is a heading</h1>
+    <h2 class="headingClass">This is 2nd Heading</h2>
+
+    <script>
+      const headingElement = document.getElementById("heading");
+      const headingElement2 = document.getElementsByClassName("headingClass");
+
+      headingElement.innerHTML = "Update it's content";
+
+      headingElement2[0].style.backgroundColor = "green";
+    </script>
+  </body>
+</html>
