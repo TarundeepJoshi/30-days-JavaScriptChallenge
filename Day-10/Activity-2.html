@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, dolorem.
+    </h1>
+
+    <button id="btn-1">Mouse Over change heading's bg color</button>
+    <button id="btn-2">Mouse Out reset heading's bg color</button>
+
+    <script>
+      const h1 = document.getElementById("h1");
+      const btn1 = document.getElementById("btn-1");
+      const btn2 = document.getElementById("btn-2");
+
+      btn1.addEventListener("mouseover", function () {
+        h1.style.backgroundColor = "red";
+      });
+
+      btn2.addEventListener("mouseout", function () {
+        h1.style.backgroundColor = "white";
+      });
+    </script>
+  </body>
+</html>

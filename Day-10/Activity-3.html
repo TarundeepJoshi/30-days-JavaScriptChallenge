@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input1" type="text" name="" id="" /><br /><br />
+    <input id="input2" type="text" name="" id="" />
+
+    <p></p>
+
+    <script>
+      const input1 = document.getElementById("input1");
+      const input2 = document.getElementById("input2");
+      const p = document.querySelector("p");
+
+      input1.addEventListener("keydown", (e) => {
+        const keyName = e.key;
+        console.log(keyName);
+      });
+
+      input2.addEventListener("keyup", (e) => {
+        const keyName = e.key;
+        p.textContent = `The pressed key is: ${keyName}`;
+      });
+    </script>
+  </body>
+</html>

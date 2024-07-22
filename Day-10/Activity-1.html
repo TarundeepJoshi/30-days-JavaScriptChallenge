@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ullam
+      porro illum optio laborum? Provident, sapiente. Accusantium architecto
+      asperiores molestiae.
+    </p>
+
+    <img
+      id="img"
+      src="https://images.unsplash.com/photo-1721355623754-58380b4ab4d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D"
+      alt=""
+    />
+    <button id="btn-1">Click to change paragraph content</button>
+
+    <button id="btn-2">Click to change image visibility</button>
+
+    <script>
+      const p = document.querySelector("p");
+      const button = document.getElementById("btn-1");
+      button.addEventListener("click", function () {
+        p.innerHTML = "loremipsum";
+      });
+
+      const img = document.getElementById("img");
+      const button1 = document.getElementById("btn-2");
+      button1.addEventListener("dblclick", function () {
+        if (img.style.display === "none") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
