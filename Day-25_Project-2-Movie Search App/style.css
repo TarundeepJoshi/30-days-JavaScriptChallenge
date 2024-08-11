@@ -31,10 +31,16 @@ body {
 }
 
 .search-container input,
-.search-container button {
+.search-container button,
+#more-info-btn {
     font-size: 0.9em;
     outline: none;
     border-radius: 0.3em;
+}
+
+#more-info-btn {
+    padding: .5rem;
+    margin-top: 1rem;
 }
 
 .search-container input {
@@ -48,14 +54,16 @@ body {
     border-color: #ffffff;
 }
 
-.search-container button {
+.search-container button,
+#more-info-btn {
     background-color: #ffb92a;
     border: none;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.search-container button:hover {
+.search-container button:hover,
+#more-info-btn:hover {
     background-color: black;
     color: #ffb92a;
     /* border: 1px solid #ffb92a; */
