@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-26_Project-3-Chat Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+  <div class="chat">
+    <div id="loginContainer" class="login-container">
+      <input type="text" id="usernameInput" placeholder="Enter your username" />
+      <button id="loginButton">Join Chat</button>
+    </div>
+    <div id="chatContainer" class="chat-container" style="display: none;">
+      <div id="call" class="user-bar">
+        <div class="avatar">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/694px-Unknown_person.jpg" alt="Avatar">
+        </div>
+        <div class="name">
+          <span id="name"></span>
+        </div>
+      </div>
+      <div class="conversation">
+        <div class="conversation-container">
+          <span id="ap"></span>
+        </div>
+        <form id="form" class="conversation-compose">
+          <input id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+          <span class="send">
+            <div class="circle" id="circle">
+              <i id="msend" class="zmdi zmdi-mail-send"></i>
+            </div>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="client.js"></script>
+</body>
+
+</html>
